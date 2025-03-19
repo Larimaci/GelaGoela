@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gela Goela - Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta name="keywords" content="sobremesas geladas, geladinhos, Gela Goela, sorvetes, doces gelados">
+  <meta name="author" content="Gela Goela">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.gelagoela.com.br">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Gela Goela - Deliciosas Sobremesas Geladas">
+  <meta property="og:description" content="Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta property="og:image" content="https://www.gelagoela.com.br/img/geladinhos-destaque.jpg">
+  <meta property="og:url" content="https://www.gelagoela.com.br">
+  <meta property="og:type" content="website">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gela Goela",
+      "url": "https://www.gelagoela.com.br",
+      "logo": "https://www.gelagoela.com.br/img/logo-gela-goela.png",
+      "description": "Especializada em deliciosas sobremesas geladas.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55 11 94716-3442",
+        "contactType": "customer service",
+        "areaServed": "BR"
+      }
+    }
+  </script>
+
+  <title>Gela Goela - Deliciosas Sobremesas Geladas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+   :root {
+  --primary-color: #e06c71; /* Rosa principal */
+  --secondary-color: #90caf9; /* Azul mais claro para contrastes */
+  --accent-color: #bbdefb; /* Azul suave para detalhes */
+  --background-color: #f9f9f9; /* Fundo claro */
+  --text-color: #333; /* Texto escuro */
+  --white: #fff; /* Branco */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  --border-radius: 12px; /* Bordas arredondadas */
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, footer {
+  background-color: var(--primary-color); /* Cor rosa */
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.3rem 0; /* Reduzido para 0.3rem */
+  box-shadow: var(--shadow);
+}
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .navbar-brand img {
+  width: 50px; /* Tamanho da logo */
+  transition: transform 0.3s ease;
+}
+
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar-nav {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin: 0 1rem;
+    }
+
+    .nav-link {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-size: 1rem; /* Reduzido para 1rem */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--white);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+  color: var(--white) !important;
+  font-size: 1rem; /* Reduzido para 1rem */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+    .social-icons a:hover {
+      transform: translateY(-3px);
+      color: var(--accent-color) !important;
+    }
+
+    .hero-section {
+  background: linear-gradient(rgba(108, 178, 235, 0.9), rgba(144, 202, 249, 0.9)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  border-radius: var(--border-radius);
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .benefit-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: #90caf9; /* Azul claro */
+  margin-bottom: 1rem;
+}
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .benefit-card i {
+      font-size: 2.5rem;
+      color: #90caf9; /* Azul claro */
+      margin-bottom: 1rem;
+    }
+
+    .benefit-card h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .benefit-card p {
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    
+    .form-section {
+    background-color: #90caf9; /* Azul claro sólido */
+    padding: 4rem 0; /* Espaçamento interno */
+    border-radius: var(--border-radius); /* Bordas arredondadas */
+    margin: 2rem auto; /* Margem externa */
+    max-width: 1200px; /* Largura máxima */
+  }
+
+  .form-section .form-control-custom {
+    background-color: var(--white); /* Fundo branco */
+    border: 2px solid var(--white); /* Borda branca */
+    border-radius: var(--border-radius); /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  }
+
+  .form-section .form-control-custom:focus {
+    border-color: var(--secondary-color); /* Borda azul ao focar */
+    box-shadow: 0 0 8px rgba(144, 202, 249, 0.3); /* Sombra suave */
+  }
+
+  .form-section .btn-primary-custom {
+    background-color: var(--white); /* Fundo branco */
+    color: #90caf9; /* Texto azul claro */
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary-custom {
+  background-color: #90caf9; /* Azul claro */
+  color: var(--white); /* Texto branco */
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #6cb2eb; /* Azul mais escuro ao passar o mouse */
+  color: var(--white);
+}
+
+    footer {
+      padding: 2rem 0;
+    }
+
+    footer a {
+      color: var(--white) !important;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--accent-color) !important;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section p {
+        font-size: 1rem;
+      }
+
+      .benefit-card {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Gela.png" alt="Gela Goela" width="60">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="parceiro.html">Seja Parceiro</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+          </ul>
+
+          <div class="social-icons ml-lg-4">
+            <a href="https://www.instagram.com/gelagoela.gelados/" class="text-white mx-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61573819703104" class="text-white mx-2">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@gelagoela.gelados" class="text-white mx-2">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/5511947163442" class="text-white mx-2">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Seja um Parceiro Gela Goela</h1>
+        <p>Amplie seus lucros oferecendo os melhores geladinhos do mercado</p>
+      </div>
+    </section>
+
+    <!-- Benefícios da Parceria -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Vantagens de Ser Parceiro</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="benefit-card">
+          <i class="fas fa-coins"></i>
+          <h4>Margens Atraentes</h4>
+          <p>Lucratividade garantida com margens de até 40%</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="benefit-card">
+          <i class="fas fa-truck"></i>
+          <h4>Logística Eficiente</h4>
+          <p>Entregas programadas em toda a região</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="benefit-card">
+          <i class="fas fa-chart-line"></i>
+          <h4>Suporte Comercial</h4>
+          <p>Treinamentos e materiais de vendas exclusivos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Formulário de Parceria -->
+    <section class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  <input type="text" class="form-control form-control-custom" id="nome" required>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <label for="email" class="form-label">E-mail Profissional</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  <input type="email" class="form-control form-control-custom" id="email" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <label for="telefone" class="form-label">WhatsApp</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fab fa-whatsapp"></i></span>
+                  <input type="tel" class="form-control form-control-custom" id="telefone" required>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <label for="cidade" class="form-label">Cidade/Estado</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                  <input type="text" class="form-control form-control-custom" id="cidade" required>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="redes-sociais" class="form-label">Redes Sociais (opcional)</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-hashtag"></i></span>
+                <input type="text" class="form-control form-control-custom" id="redes-sociais">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="mensagem" class="form-label">Conte um pouco sobre seu negócio</label>
+              <textarea class="form-control form-control-custom" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary-custom btn-lg btn-block">
+              Enviar Solicitação <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Perguntas Frequentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="card mb-3">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne">
+                Qual o investimento inicial necessário?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+            <div class="card-body">
+              Trabalhamos sem taxa de adesão. Você só paga pelos produtos que vender!
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                Como funciona o sistema de entregas?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body">
+              Realizamos entregas semanais com pedido mínimo de 200 unidades.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="mb-0">&copy; 2025 Gela Goela. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right mt-3 mt-md-0">
+          <nav aria-label="Links secundários">
+            <a href="politica-de-privacidade.html" class="text-white mx-2">Política de Privacidade</a>
+            <a href="termos-de-uso.html" class="text-white mx-2">Termos de Uso</a>
+            <a href="contato.html" class="text-white mx-2">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

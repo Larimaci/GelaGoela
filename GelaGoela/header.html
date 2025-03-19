@@ -1,0 +1,145 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gela Goela - Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta name="keywords" content="sobremesas geladas, geladinhos, Gela Goela, sorvetes, doces gelados">
+  <meta name="author" content="Gela Goela">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.gelagoela.com.br">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Gela Goela - Deliciosas Sobremesas Geladas">
+  <meta property="og:description" content="Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta property="og:image" content="https://www.gelagoela.com.br/img/geladinhos-destaque.jpg">
+  <meta property="og:url" content="https://www.gelagoela.com.br">
+  <meta property="og:type" content="website">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gela Goela",
+      "url": "https://www.gelagoela.com.br",
+      "logo": "https://www.gelagoela.com.br/img/logo-gela-goela.png",
+      "description": "Especializada em deliciosas sobremesas geladas.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55 11 94716-3442",
+        "contactType": "customer service",
+        "areaServed": "BR"
+      }
+    }
+  </script>
+
+  <title>Gela Goela - Deliciosas Sobremesas Geladas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #e06c71; /* Rosa principal */
+      --secondary-color: #90caf9; /* Azul mais claro para contrastes */
+      --accent-color: #bbdefb; /* Azul suave para detalhes */
+      --background-color: #f9f9f9; /* Fundo claro */
+      --text-color: #333; /* Texto escuro */
+      --white: #fff; /* Branco */
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      --border-radius: 12px; /* Bordas arredondadas */
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--primary-color); /* Cor rosa */
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      padding: 1rem 0;
+    }
+
+    .navbar-brand img {
+      width: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link {
+      color: var(--white) !important;
+      font-size: 1rem;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--white);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .social-icons a {
+      color: var(--white) !important;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-3px);
+      color: var(--accent-color) !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Gela.png" alt="Gela Goela" width="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="parceiro.html">Seja Parceiro</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+          </ul>
+          <div class="social-icons ml-lg-4">
+            <a href="https://www.instagram.com/gelagoela.gelados/" class="text-white mx-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@gelagoela.gelados" class="text-white mx-2">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/5511947163442" class="text-white mx-2">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>

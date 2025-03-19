@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gela Goela - Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta name="keywords" content="sobremesas geladas, geladinhos, Gela Goela, sorvetes, doces gelados">
+  <meta name="author" content="Gela Goela">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.gelagoela.com.br">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Gela Goela - Deliciosas Sobremesas Geladas">
+  <meta property="og:description" content="Especializada em deliciosas sobremesas geladas. Confira nossos produtos e seja um parceiro!">
+  <meta property="og:image" content="https://www.gelagoela.com.br/img/geladinhos-destaque.jpg">
+  <meta property="og:url" content="https://www.gelagoela.com.br">
+  <meta property="og:type" content="website">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gela Goela",
+      "url": "https://www.gelagoela.com.br",
+      "logo": "https://www.gelagoela.com.br/img/logo-gela-goela.png",
+      "description": "Especializada em deliciosas sobremesas geladas.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55 11 94716-3442",
+        "contactType": "customer service",
+        "areaServed": "BR"
+      }
+    }
+  </script>
+
+  <title>Gela Goela - Deliciosas Sobremesas Geladas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+   :root {
+  --primary-color: #e06c71; /* Rosa principal */
+  --secondary-color: #90caf9; /* Azul mais claro para contrastes */
+  --accent-color: #bbdefb; /* Azul suave para detalhes */
+  --background-color: #f9f9f9; /* Fundo claro */
+  --text-color: #333; /* Texto escuro */
+  --white: #fff; /* Branco */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  --border-radius: 12px; /* Bordas arredondadas */
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, footer {
+  background-color: var(--primary-color); /* Cor rosa */
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.3rem 0; /* Reduzido para 0.3rem */
+  box-shadow: var(--shadow);
+}
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .navbar-brand img {
+  width: 50px; /* Tamanho da logo */
+  transition: transform 0.3s ease;
+}
+
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar-nav {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin: 0 1rem;
+    }
+
+    .nav-link {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-size: 1rem; /* Reduzido para 1rem */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--white);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+  color: var(--white) !important;
+  font-size: 1rem; /* Reduzido para 1rem */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+    .social-icons a:hover {
+      transform: translateY(-3px);
+      color: var(--accent-color) !important;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(108, 178, 235, 0.9), rgba(144, 202, 249, 0.9)), url('img/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+      border-radius: var(--border-radius);
+      margin: 1rem auto;
+      max-width: 1200px;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .benefit-card {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .benefit-card i {
+      font-size: 2.5rem;
+      color: #90caf9; /* Azul claro */
+      margin-bottom: 1rem;
+    }
+
+    .benefit-card h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .benefit-card p {
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    footer {
+      padding: 2rem 0;
+    }
+
+    footer a {
+      color: var(--white) !important;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--accent-color) !important;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section p {
+        font-size: 1rem;
+      }
+
+      .benefit-card {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Gela.png" alt="Gela Goela" width="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="parceiro.html">Seja Parceiro</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+          </ul>
+          <div class="social-icons ml-lg-4">
+            <a href="https://www.instagram.com/gelagoela.gelados/" class="text-white mx-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61573819703104" class="text-white mx-2">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@gelagoela.gelados" class="text-white mx-2">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/5511947163442" class="text-white mx-2">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Sobre Nós</h1>
+        <p>Conheça a história e os valores da Gela Goela</p>
+      </div>
+    </section>
+
+<!-- Nossa História -->
+<section class="container py-5">
+  <h2 class="text-center mb-5">Nossa História</h2>
+  <div class="row align-items-center"> <!-- Alinhamento vertical -->
+    <div class="col-md-6">
+      <p>
+        Fundação:
+
+        O Gela Goela foi criado por foliões paulistas assíduos, apaixonados pelo carnaval e pela cultura brasileira. Nossa pequena equipe é formada 75% por mulheres. E 100% composta por trabalhadores periféricos de São Paulo, dedicados também aos trabalhos noturnos no centro da capital paulistana. Nós amamos ajudar na construção dos eventos na noite da maior cidade da América Latina.
+        Nossa marca surgiu do nosso desejo de levar uma experiência inovadora, e sinceramente prazerosa, para o maior carnaval do Brasil - a festa mais linda do planeta -, num contexto de mudanças climáticas intensas.
+        De foliões para foliões, o que entregamos hoje são produtos gelados artesanais de alta qualidade. 
+      </p>
+      <p>
+        Produção:
+
+        Com criatividade e experiência técnica diversificada, optamos pela produção artesanal qualificada e rigorosa em cada processo, com especial atenção à higiene. Apesar de padronizadas, cada receita produzida é minuciosamente provada, antes de ser embalada e vendida.
+        Quem Gela a Goela, é presenteado com uma experiência gastronômica refrescante. Nossas receitas exclusivas, combinam os melhores ingredientes, que garantem uma experiência refrescante, equilibrada em sabor, doçura e, na linha Gela Brisa, em teor alcoólico.
+      </p>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center"> <!-- Centraliza o vídeo -->
+      <div style="position: relative; width: 300px; height: 400px; overflow: hidden; border-radius: 12px;"> <!-- Tamanho reduzido -->
+        <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+          <source src="C:\Users\laris\Downloads\GelaGoela\GelaGoela\videos\video.mp4" type="video/mp4">
+          <source src="C:\Users\laris\Downloads\GelaGoela\GelaGoela\videos\video.ogg" type="video/ogg">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Missão e Valores -->
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Missão e Valores</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-heart"></i>
+            <h4>Missão</h4>
+            <p>Proporcionar momentos de felicidade através de sobremesas geladas de alta qualidade.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-leaf"></i>
+            <h4>Sustentabilidade</h4>
+            <p>Valorizamos práticas sustentáveis em toda a nossa cadeia produtiva.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="benefit-card">
+            <i class="fas fa-users"></i>
+            <h4>Respeito</h4>
+            <p>Respeito aos nossos clientes, parceiros e colaboradores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Equipe -->
+<section class="container py-5">
+  <h2 class="text-center mb-5">Nossa Equipe</h2>
+  <div class="row justify-content-center"> <!-- Adicionei justify-content-center para centralizar -->
+    <div class="col-md-3 mb-4"> <!-- Reduzi para col-md-3 para caber 4 cards por linha -->
+      <div class="benefit-card">
+        <img src="img/equipe1.jpg" alt="Barbara Goela" class="img-fluid rounded-circle mb-3">
+        <h4>Bárbara Goela</h4>
+        <p>Fundadora, Marketing, Chef de Confeitaria</p>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="benefit-card">
+        <img src="img/equipe2.jpg" alt="Larissa Goela" class="img-fluid rounded-circle mb-3">
+        <h4>Larissa Goela</h4>
+        <p>Fundadora, desenvolvedora de sistema e Vendedora </p>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="benefit-card">
+        <img src="img/equipe2.jpg" alt="Ageu Goela" class="img-fluid rounded-circle mb-3">
+        <h4>Ageu Goela</h4>
+        <p>Fundador e Chef de Cozinha</p>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="benefit-card">
+        <img src="img/equipe3.jpg" alt="Larissa Goela" class="img-fluid rounded-circle mb-3">
+        <h4>Larissa Goela</h4>
+        <p>Fundadora, Marketing e Design Gráfico</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="mb-0">&copy; 2025 Gela Goela. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right mt-3 mt-md-0">
+          <nav aria-label="Links secundários">
+            <a href="politica-de-privacidade.html" class="text-white mx-2">Política de Privacidade</a>
+            <a href="termos-de-uso.html" class="text-white mx-2">Termos de Uso</a>
+            <a href="contato.html" class="text-white mx-2">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
